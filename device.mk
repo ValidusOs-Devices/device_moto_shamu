@@ -414,3 +414,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     sys.usb.config=mtp,adb \
     persist.sys.usb.config=mtp,adb \
     ro.adb.secure=0 
+
+# miracast props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1﻿
