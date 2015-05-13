@@ -193,9 +193,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.shamu
 
-# for launcher layout
-#PRODUCT_PACKAGES += \
-#    ShamuLayout
+#Sound Trigger
+PRODUCT_COPY_FILES += \
+    device/moto/shamu/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
+    device/moto/shamu/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
+
+# for off charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 PRODUCT_PACKAGES += \
     bdAddrLoader
