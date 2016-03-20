@@ -72,4 +72,8 @@
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
         <item>com.google.android.apps.tycho</item>
     </string-array>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+           Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
 </resources>
