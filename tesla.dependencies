@@ -2,7 +2,7 @@
  {
    "repository":  "GZR-Kernels/kernel_moto_shamu",
    "target_path": "kernel/moto/shamu",
-   "branch":      "n7.1"
+   "branch":      "nougat"
  },
  {
    "repository":  "TheMuppets/proprietary_vendor_motorola",
