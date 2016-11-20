@@ -129,9 +129,14 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 
-USE_CLANG_PLATFORM_BUILD := true
-
 # Disable dex-preopt of prebuilts to save space.
 DONT_DEXPREOPT_PREBUILTS := true
+
+# Use Snapdragon LLVM for Nightlies, if available
+ifeq ($(TESLA_BUILDTYPE), UNOFFICIAL)
+USE_CLANG_PLATFORM_BUILD := true
+else
+TARGET_USE_SDCLANG := true
+endif
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
