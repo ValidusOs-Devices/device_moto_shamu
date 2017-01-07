@@ -139,4 +139,4 @@ else
 TARGET_USE_SDCLANG := true
 endif
 
--include vendor/motorola/shamu/BoardConfigVendor.mk
+-include vendor/moto/shamu/BoardConfigVendor.mk
