@@ -5,8 +5,8 @@
    "branch":      "nougat"
  },
  {
-   "repository":  "TheMuppets/proprietary_vendor_motorola",
+   "repository":  "BigTopKrazies/proprietary_vendor_motorola",
    "target_path": "vendor/motorola",
-   "branch":      "cm-14.1"
+   "branch":      "nougat"
  }
 ]
