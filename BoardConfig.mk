@@ -29,10 +29,12 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 TARGET_NO_BOOTLOADER := true
 
-# Build kernel inline
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+# Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
+TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE :=  2048
@@ -95,14 +97,8 @@ TARGET_USES_ION := true
 TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/moto/shamu/cryptfs_hw
 
-# Enable dex-preoptimization to speed up first boot sequence
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),user)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
+# Disable dex-preopt of prebuilts to save space.
+DONT_DEXPREOPT_PREBUILTS := true
 
 TARGET_TOUCHBOOST_FREQUENCY := 1500
 TARGET_USERIMAGES_USE_EXT4 := true
