@@ -21,5 +21,5 @@ TARGET_VENDOR := moto
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     DEVICE_MAINTAINERS="John Brewer(TheRingMaster)" \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.1.1/N6F27E/3939304:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 7.1.1 N6F27E 3939304 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:7.1.1/N6F27H/4072753:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 7.1.1 N6F27H 4072753 release-keys"
