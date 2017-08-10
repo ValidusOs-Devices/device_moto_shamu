@@ -353,6 +353,10 @@ PRODUCT_PACKAGES += \
     QXDMLoggerV2
 endif # aosp_shamu
 
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # Disable modem ramdumps
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.qc.sub.rdump.on=0
