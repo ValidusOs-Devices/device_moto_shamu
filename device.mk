@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8084 \
     hwcomposer.msm8084 \
     memtrack.msm8084 \
+    libgenlock \
     libqdutils \
     libqdMetaData
 
