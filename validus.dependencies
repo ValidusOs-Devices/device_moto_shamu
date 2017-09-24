@@ -2,7 +2,7 @@
   {
     "repository": "GZR-Kernels/kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "branch":8.0"
+    "branch":8.0",
   },
   {
     "repository": "BigTopKrazies/proprietary_vendor_motorola",
