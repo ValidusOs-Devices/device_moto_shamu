@@ -403,4 +403,7 @@
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
+
+    <!-- doze always on -->
+    <bool name="config_enableDozeAlwaysOn">true</bool>
 </resources>
