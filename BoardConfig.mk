@@ -144,6 +144,10 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libfacenet.so|libprotobuf-cpp-preo.so
+
 TARGET_FS_CONFIG_GEN += device/moto/shamu/config.fs
 
 DEVICE_MANIFEST_FILE := device/moto/shamu/manifest.xml
