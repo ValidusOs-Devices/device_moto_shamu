@@ -331,4 +331,6 @@
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
+    <!-- Enable system navigation keys. -->
+    <bool name="config_supportSystemNavigationKeys">true</bool>
 </resources>
